@@ -1,9 +1,9 @@
-const numbers = [-111, 2, 3, 4, 5, 6, 7, 8, 9, 10, -1234]
+const numbers = [12341, -111, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1000, -1234]
 
-const minValue = arrayOfNumbers => {
-    const arrayOfMinValues = arrayOfNumbers.sort( (a, b) => a - b)
-    const minValue = arrayOfMinValues[0]
-    return minValue
+const maxValue = arrayOfNumbers => {
+    const arrayOfMaxValues = arrayOfNumbers.sort((a, b) => b - a)
+    const maxValue = arrayOfMaxValues[0]
+    return maxValue
 }
 
-minValue(numbers)
+maxValue(numbers)
