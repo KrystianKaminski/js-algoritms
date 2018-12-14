@@ -1,12 +1,9 @@
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const numbers = [-111, 2, 3, 4, 5, 6, 7, 8, 9, 10, -1234]
 
-const median = numbers => {
-    numbers.sort( (a, b) => a -b)
-
-    let half = Math.floor(numbers.length/2)
-
-    if (numbers.length % 2) return numbers[half]
-    return (numbers[half - 1] + numbers[half]) / 2.0
+const minValue = arrayOfNumbers => {
+    const arrayOfMinValues = arrayOfNumbers.sort( (a, b) => a - b)
+    const minValue = arrayOfMinValues[0]
+    return minValue
 }
 
-median(numbers)
+minValue(numbers)
